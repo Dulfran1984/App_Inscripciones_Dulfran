@@ -293,9 +293,9 @@
             // btn_Home
             // 
             this.btn_Home.Image = global::Presentacion.Properties.Resources.work_from_home;
-            this.btn_Home.Location = new System.Drawing.Point(12, 456);
+            this.btn_Home.Location = new System.Drawing.Point(12, 478);
             this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Size = new System.Drawing.Size(71, 77);
+            this.btn_Home.Size = new System.Drawing.Size(54, 59);
             this.btn_Home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Home.TabIndex = 29;
             this.btn_Home.TabStop = false;

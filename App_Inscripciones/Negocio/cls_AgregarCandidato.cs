@@ -46,7 +46,7 @@ namespace Negocio
                     (str_id, str_pnombre, str_snombre, str_papellido, str_sapellido,
                     str_contacto, str_direccion, str_correo, str_edad, int_estudio, 
                     str_acudientes, byt_imagen);
-                str_msn = "El candadidato " + str_pnombre + " ha sido registrado";
+                str_msn = "El candadidato " + str_pnombre + str_snombre + str_papellido + str_sapellido + " ha sido registrado";
             }
         }
         public string getMsn() { return this.str_msn; }

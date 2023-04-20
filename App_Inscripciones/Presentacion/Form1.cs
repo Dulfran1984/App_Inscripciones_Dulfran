@@ -48,20 +48,16 @@ namespace Presentacion
         }
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
-           
             MemoryStream ms = new MemoryStream();
             ptb_Imagen.Image.Save(ms, ImageFormat.Jpeg);
             byte[] aByte = ms.ToArray();
-
-           
             cls_AgregarCandidato objAgregarCandidato = new cls_AgregarCandidato(
                 txt_ID.Text,txt_PNombre.Text,txt_SNombre.Text,txt_PApellido.Text, txt_SApellido.Text,
                 txt_Contacto.Text,txt_Direccion.Text,txt_Correo.Text,txt_Edad.Text,
                 cbx_Estudio.SelectedIndex+1,txt_Acudientes.Text, aByte);
-            MessageBox.Show("" + objAgregarCandidato.getMsn());
+            MessageBox.Show("" + objAgregarCandidato.getMsn() ,"ERROR" ,MessageBoxButtons.OK, MessageBoxIcon.Information);
             fnt_Nuevo() ;
         }
-
         private void ptb_Imagen_Click(object sender, EventArgs e)
         {
             try
@@ -69,7 +65,6 @@ namespace Presentacion
                 ruta_directorio_Raiz = Path.Combine(Application.StartupPath + "\\Imagenes");
                 OpenFileDialog file = new OpenFileDialog();
                 file.Filter = "Archivo JPG|*.jpg";
-
                 if (file.ShowDialog() == DialogResult.OK)
                 {
                     ptb_Imagen.Image = Image.FromFile(file.FileName);
