@@ -322,6 +322,7 @@
             this.btn_Actualizar.TabIndex = 26;
             this.btn_Actualizar.TabStop = false;
             this.toolTip1.SetToolTip(this.btn_Actualizar, "Actualizar");
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
             // 
             // btn_Guardar
             // 

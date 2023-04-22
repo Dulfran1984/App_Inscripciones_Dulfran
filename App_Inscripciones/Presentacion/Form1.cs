@@ -92,5 +92,15 @@ namespace Presentacion
         {
             fnt_Consultar(txt_ID.Text);
         }
+        
+        private void btn_Actualizar_Click(object sender, EventArgs e)
+        {
+            cls_Actualizar_Candidato objAgregarCandidato = new cls_Actualizar_Candidato(
+                txt_ID.Text, txt_PNombre.Text, txt_SNombre.Text, txt_PApellido.Text, txt_SApellido.Text,
+                txt_Contacto.Text, txt_Direccion.Text, txt_Correo.Text, txt_Edad.Text,
+                cbx_Estudio.SelectedIndex + 1, txt_Acudientes.Text);
+            MessageBox.Show("" + objAgregarCandidato.getMsn(), "Actualizar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            fnt_Nuevo();
+        }
     }
 }

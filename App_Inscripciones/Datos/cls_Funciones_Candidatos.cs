@@ -95,6 +95,31 @@ namespace Datos
             
             obj_Conectar.fnt_Desconectar();
         }
+        public void fnt_Actualizar(
+            string id, string p_nombre, string s_nombre,
+            string p_apellido, string s_apellido,string contacto, string direccion,
+            string correo, string edad, int estudio, string acudientes)
+        {
+                cls_Conexion obj_conexion = new cls_Conexion();
+                obj_conexion.fnt_Conectar();
+                string comando = "update tbl_personas set p_nombre=@p_nombre, s_nombre=@s_nombre, p_apellido=@p_apellido, " +
+                "s_apellido=@s_apellido,contacto=@contacto,dirección=@dirección,correo=@correo,edad=@edad," +
+                "FKCodigo_tbl_nivelestudio=@FKCodigo_tbl_nivelestudio,acudiente=@acudiente where PKId=@PKId";
+                MySqlCommand cmd = new MySqlCommand(comando, obj_conexion.conex);
+                cmd.Parameters.AddWithValue("@PKId", id);
+                cmd.Parameters.AddWithValue("@P_Nombre", p_nombre);
+                cmd.Parameters.AddWithValue("@S_Nombre", s_nombre);
+                cmd.Parameters.AddWithValue("@P_Apellido", p_apellido);
+                cmd.Parameters.AddWithValue("@S_Apellido", s_apellido);
+                cmd.Parameters.AddWithValue("@Contacto", contacto);
+                cmd.Parameters.AddWithValue("@Dirección", direccion);
+                cmd.Parameters.AddWithValue("@Correo", correo);
+                cmd.Parameters.AddWithValue("@Edad", edad);
+                cmd.Parameters.AddWithValue("@FKCodigo_tbl_nivelestudio", estudio);
+                cmd.Parameters.AddWithValue("@Acudiente", acudientes);
+                cmd.ExecuteNonQuery();
+                obj_conexion.fnt_Desconectar();
+        }
         public Bitmap getBmp() { return this.bmp; }
         public string getPNombre() { return this.str_pnombre; }
         public string getSNombre() { return this.str_snombre;}
