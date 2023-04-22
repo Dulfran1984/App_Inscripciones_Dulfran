@@ -60,7 +60,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-16, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 48);
+            this.panel1.Size = new System.Drawing.Size(815, 48);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -76,11 +76,12 @@
             // 
             // txt_ID
             // 
-            this.txt_ID.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.txt_ID.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ID.Location = new System.Drawing.Point(231, 107);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(330, 29);
+            this.txt_ID.Size = new System.Drawing.Size(392, 27);
             this.txt_ID.TabIndex = 4;
+            this.txt_ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_ID_KeyUp);
             // 
             // label2
             // 
@@ -95,10 +96,10 @@
             // txt_Nombres
             // 
             this.txt_Nombres.Enabled = false;
-            this.txt_Nombres.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.txt_Nombres.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Nombres.Location = new System.Drawing.Point(231, 142);
             this.txt_Nombres.Name = "txt_Nombres";
-            this.txt_Nombres.Size = new System.Drawing.Size(330, 29);
+            this.txt_Nombres.Size = new System.Drawing.Size(392, 27);
             this.txt_Nombres.TabIndex = 26;
             // 
             // label3
@@ -114,10 +115,10 @@
             // txt_Correo
             // 
             this.txt_Correo.Enabled = false;
-            this.txt_Correo.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.txt_Correo.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Correo.Location = new System.Drawing.Point(231, 177);
             this.txt_Correo.Name = "txt_Correo";
-            this.txt_Correo.Size = new System.Drawing.Size(330, 29);
+            this.txt_Correo.Size = new System.Drawing.Size(392, 27);
             this.txt_Correo.TabIndex = 28;
             // 
             // label4
@@ -133,10 +134,10 @@
             // txt_Direccion
             // 
             this.txt_Direccion.Enabled = false;
-            this.txt_Direccion.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.txt_Direccion.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Direccion.Location = new System.Drawing.Point(231, 212);
             this.txt_Direccion.Name = "txt_Direccion";
-            this.txt_Direccion.Size = new System.Drawing.Size(330, 29);
+            this.txt_Direccion.Size = new System.Drawing.Size(392, 27);
             this.txt_Direccion.TabIndex = 30;
             // 
             // label8
@@ -152,10 +153,10 @@
             // txt_Contacto
             // 
             this.txt_Contacto.Enabled = false;
-            this.txt_Contacto.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.txt_Contacto.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Contacto.Location = new System.Drawing.Point(231, 247);
             this.txt_Contacto.Name = "txt_Contacto";
-            this.txt_Contacto.Size = new System.Drawing.Size(330, 29);
+            this.txt_Contacto.Size = new System.Drawing.Size(392, 27);
             this.txt_Contacto.TabIndex = 32;
             // 
             // label5
@@ -185,7 +186,7 @@
             this.cbx_Estudio.FormattingEnabled = true;
             this.cbx_Estudio.Location = new System.Drawing.Point(24, 325);
             this.cbx_Estudio.Name = "cbx_Estudio";
-            this.cbx_Estudio.Size = new System.Drawing.Size(701, 31);
+            this.cbx_Estudio.Size = new System.Drawing.Size(752, 31);
             this.cbx_Estudio.TabIndex = 34;
             // 
             // label7
@@ -211,7 +212,7 @@
             // btn_Cancelar
             // 
             this.btn_Cancelar.Image = global::Presentacion.Properties.Resources.boton_x;
-            this.btn_Cancelar.Location = new System.Drawing.Point(629, 362);
+            this.btn_Cancelar.Location = new System.Drawing.Point(680, 362);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(45, 48);
             this.btn_Cancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +222,7 @@
             // btn_Aceptar
             // 
             this.btn_Aceptar.Image = global::Presentacion.Properties.Resources.cheque;
-            this.btn_Aceptar.Location = new System.Drawing.Point(680, 362);
+            this.btn_Aceptar.Location = new System.Drawing.Point(731, 362);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(45, 48);
             this.btn_Aceptar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -231,7 +232,7 @@
             // ptb_Imagen
             // 
             this.ptb_Imagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptb_Imagen.Location = new System.Drawing.Point(578, 107);
+            this.ptb_Imagen.Location = new System.Drawing.Point(629, 107);
             this.ptb_Imagen.Name = "ptb_Imagen";
             this.ptb_Imagen.Size = new System.Drawing.Size(147, 169);
             this.ptb_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -242,7 +243,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(492, 115);
+            this.label9.Location = new System.Drawing.Point(552, 115);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 13);
             this.label9.TabIndex = 39;
@@ -253,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(737, 415);
+            this.ClientSize = new System.Drawing.Size(793, 415);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Aceptar);
